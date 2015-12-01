@@ -1,8 +1,7 @@
-package oracle;
+package dao;
 
-import dao.DaoFactory;
-import dao.GenericDao;
-import domain.User;
+import actors.User;
+import dao.impl.OracleUserDao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

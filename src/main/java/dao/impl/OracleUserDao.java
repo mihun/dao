@@ -1,11 +1,9 @@
-package oracle;
+package dao.impl;
 
 import dao.AbstractDao;
-import domain.User;
+import actors.User;
 
 import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.LinkedList;
 import java.util.List;

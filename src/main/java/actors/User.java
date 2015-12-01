@@ -1,4 +1,4 @@
-package domain;
+package actors;
 
 import java.sql.Date;
 

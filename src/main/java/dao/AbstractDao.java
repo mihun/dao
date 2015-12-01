@@ -32,11 +32,9 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
         sql += "  WHERE attrs.VALUE = ?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, key);
-            System.out.println("wp");
             ResultSet rs = statement.executeQuery();
             list = parseResultSet(rs);
         } catch (Exception e) {
-           e.printStackTrace();
             throw new RuntimeException(e);
         }
         if (list == null || list.size() == 0) {
